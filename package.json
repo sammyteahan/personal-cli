@@ -11,5 +11,11 @@
   "keywords": [
     "sammyteahan",
     "teahan"
-  ]
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "sammyteahan/personal-cli",
+  "author": {
+    "name": "Sammy Teahan"
+  }
 }
