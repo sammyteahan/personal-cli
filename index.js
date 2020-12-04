@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 
 const pkgJSON = require('./package.json');
+
 const welcome = require('cli-welcome');
+const chalk = require('chalk');
 
 welcome({
-  title: pkgJSON.name,
+  title: 'Sammy Teahan',
   tagLine: 'Hi there! 👋',
   description: pkgJSON.description,
   version: pkgJSON.version,
@@ -14,13 +16,10 @@ welcome({
   clear: true,
 });
 
-console.log(`
-Sammy Teahan
+console.log(`${chalk.italic('Software Developer at https://www.objectiveinc.com')}
 
-Software Developer at Objective
-
-Github: https://github.com/sammyteahan
-Stack Overflow: https://stackoverflow.com/users/7003729/sammyteahan
-Codeforces: https://codeforces.com/submissions/kingjames
+${chalk.hex('#6cc644').bold.inverse(' Github ')}         ${chalk.dim('https://github.com/sammyteahan')}
+${chalk.hex('#f48024').bold.inverse(' Stack Overflow ')} ${chalk.dim('https://stackoverflow.com/users/7003729/sammyteahan')}
+${chalk.hex('#C11D26').bold.inverse(' Codeforces ')}     ${chalk.dim('https://codeforces.com/submissions/kingjames')}
 `);
 
