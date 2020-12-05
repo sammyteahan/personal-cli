@@ -1,6 +1,6 @@
 {
   "name": "sammyteahan",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Personal bio brought to you by `npx sammyteahan`",
   "bin": {
     "sammyteahan": "index.js"
